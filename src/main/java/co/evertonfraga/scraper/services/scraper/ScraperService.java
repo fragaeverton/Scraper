@@ -1,4 +1,4 @@
-package co.evertonfraga.scraper.services;
+package co.evertonfraga.scraper.services.scraper;
 
 import co.evertonfraga.scraper.entities.Product;
 
@@ -11,7 +11,7 @@ public class ScraperService {
         this.scraper = scraper;
     }
 
-    public Product getProduct(String url) {
-        return scraper.getProduct(url);
+    public Product getProduct(Product product) {
+        return scraper.getProduct(product);
     }
 }
