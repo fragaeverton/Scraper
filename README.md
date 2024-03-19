@@ -23,7 +23,3 @@ Once the application is up and running, you can interact with it through its RES
 
 - **Retrieve all monitored products**: `GET /products`
 - **Retrieve price data for a specific product**: `GET /products/{productId}/price`
-
-## Contact
-
-For any inquiries or support regarding the UK Market Price Monitor, feel free to contact us at [contact@evertonfraga.co.uk](mailto:contact@evertonfraga.co.uk).
