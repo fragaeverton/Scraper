@@ -22,4 +22,6 @@ The Scraper is a Java application built with the Spring Boot framework. It funct
 Once the application is up and running, you can interact with it through its REST API endpoints. Here are some sample API calls:
 
 - **Retrieve all monitored products**: `GET /products`
+- **Retrieve all shops**: `GET /shops`
 - **Retrieve price data for a specific product**: `GET /products/{productId}/price`
+- **Add product** (need the shopId and the product link only): `POST /products/`
