@@ -4,6 +4,8 @@ import lombok.*;
 
 import jakarta.persistence.*;
 
+import java.util.List;
+
 @Getter
 @Setter
 @AllArgsConstructor
@@ -23,6 +25,9 @@ public class Product {
 
     @Column(table = "nickname", name = "name")
     private String nickname;
+
+    @OneToMany(mappedBy = "product", cascade = CascadeType.ALL)
+    private List<Nickname> nicknames;
 
     @Column(table = "price")
     private Double price;

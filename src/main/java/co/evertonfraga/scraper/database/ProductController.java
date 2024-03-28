@@ -26,6 +26,15 @@ public class ProductController {
     }
 
 
+    @GetMapping("/without-nicknames")
+    public List<Product> getProductsNotHavingNicknames() {
+        return productService.getProductsWithoutNicknames();
+    }
+    @GetMapping("/search")
+    public List<Product> searchProductsByName(@RequestParam String name) {
+        return productService.findProductsByName(name);
+    }
+
     @GetMapping
     public ResponseEntity<List<Product>> getAllProducts() {
         List<Product> products = productService.productList();
